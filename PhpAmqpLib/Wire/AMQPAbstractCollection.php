@@ -144,7 +144,6 @@ abstract class AMQPAbstractCollection implements \Iterator
 
         if ($type) {
             self::checkDataTypeIsSupported($type, false);
-            $val = array($type, $val);
         } else {
             $val = $this->encodeValue($val);
         }

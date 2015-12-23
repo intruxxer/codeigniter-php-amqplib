@@ -16,6 +16,20 @@ class AMQPTable extends AMQPAbstractCollection
     }
 
     /**
+     * [getValue: Get the value of specified Header]
+     * @param  [string] $key [Header Key]
+     * @return [string]      [Header Value]
+     */
+    public function getValue($key = NULL)
+    {
+        if(is_null($key)) {
+            return $this->data;
+        } else {
+            return $this->data[$key];
+        }
+    }
+
+    /**
      * @param string $key
      * @param mixed $val
      * @param integer $type
