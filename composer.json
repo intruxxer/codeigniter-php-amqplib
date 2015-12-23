@@ -25,10 +25,5 @@
             "PhpAmqpLib\\": "PhpAmqpLib/"
         }
     },
-    "license": "LGPL-2.1",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.7-dev"
-        }
-    }
+    "license": "LGPL-2.1"
 }
